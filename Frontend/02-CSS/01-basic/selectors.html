@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        h1{
+            color:red;
+        }
+        p{
+            color:green;
+        }
+
+        #c2{
+            color:yellow;
+            background-color:black;
+        }
+
+        .c1{
+            color:blue;
+            background-color:gray;
+        }
+
+        h2,h3{
+            color:pink
+        }
+
+        *{
+            margin:10px;
+        }
+
+        #c3 p{
+            color:rgb(234, 0, 255);
+        }
+
+        #b1{
+
+            color:beige;
+            background-color:black;
+            cursor:pointer;
+        }
+        #b1:hover{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="title">CSS selectors</h1>
+    <p>This is the paragraph</p>
+    <div class="c1">
+        <h2>Inside c1</h2>
+        <p>This paragraph is styled</p>
+    </div>
+    <div id="c2">
+        <p>This is inside id c2.</p>
+    </div>
+
+    <h3>Group Selector Heading</h3>
+    <button id="b1" type="submit">Submit</button>
+    <button id="b2" type="submit">Reset</button>
+
+    <div id="c3">
+        <p>This paragarph is styled using descensant selector</p>
+    </div>
+</body>
+</html>

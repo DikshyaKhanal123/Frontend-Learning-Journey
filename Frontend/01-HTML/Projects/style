@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 25px 30px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            text-transform: capitalize;
+        }
+
+        div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #4a90e2;
+        }
+
+        .gender-group label {
+            display: inline;
+            font-weight: normal;
+            margin-right: 15px;
+        }
+
+        .gender-title {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .gender-group input {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #357abd;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+    <h1>User Personal Information</h1>
+
+    <div>
+        <label for="name">Enter your full name</label>
+        <input id="name" type="text" placeholder="Enter full name" required>
+    </div>
+
+    <div>
+        <label for="email">Enter your email</label>
+        <input id="email" type="email" placeholder="Enter email" required>
+    </div>
+
+    <div>
+        <label for="password">Enter your password</label>
+        <input id="password" type="password" placeholder="Enter password" required>
+    </div>
+
+    <div>
+        <label for="confirmPassword">Confirm your password</label>
+        <input id="confirmPassword" type="password" placeholder="Retype password" required>
+    </div>
+
+    <div class="gender-group">
+        <span class="gender-title">Enter Gender</span>
+
+        <input type="radio" id="male" name="gender" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender">
+        <label for="other">Other</label>
+    </div>
+
+    <div>
+        <label for="dob">Enter your DOB</label>
+        <input id="dob" type="date">
+    </div>
+
+    <div>
+        <label for="faculty">Choose your faculty</label>
+        <select id="faculty" required>
+            <option value="" disabled selected>Select faculty</option>
+            <option value="computer">Computer</option>
+            <option value="it">IT</option>
+            <option value="civil">Civil</option>
+        </select>
+    </div>
+
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+</body>
+</html>
