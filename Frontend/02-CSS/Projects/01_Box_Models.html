@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box models</title>
+    <style>
+        header{
+            height: 60px;
+            background:red;
+        }
+        footer{
+            height:40px;
+            background:green;
+            color:yellow;
+        }
+        .box1{
+
+            margin:10px;
+            border:10px solid red;
+            border-color: red;
+            padding:10px;
+            width:500px;
+            box-sizing:content-box;
+
+        }
+        .box2{
+
+            margin:1px;
+            border:1px solid blue;
+            border-color:black;
+            padding:1px;
+            width:500px;
+            box-sizing: border-box;
+            
+        }
+    </style>
+</head>
+<body>
+    <header> <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul></header>
+    <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae, ipsa minima minus laborum quo dignissimos harum consequuntur perspiciatis doloremque labore, deleniti debitis eligendi eum ea tenetur quibusdam excepturi itaque, illum culpa.</div>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quaerat aspernatur voluptate corporis recusandae sed earum doloremque eius dolorem autem quis dolorum facilis, dicta iusto architecto ad consequatur, rerum sunt cum. Quos?</div>
+    <footer>This is footer. &copy </footer>
+</body>
+</html>
