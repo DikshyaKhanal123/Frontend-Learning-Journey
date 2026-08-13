@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Cards</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+            margin: 30px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            width: 300px;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        .card h2 {
+            color: darkblue;
+        }
+
+        .card p {
+            color: gray;
+            line-height: 1.5;
+        }
+
+        .card button {
+            background-color: darkblue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* Mobile screen */
+
+        @media (max-width: 700px) {
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Services</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Web Design</h2>
+
+            <p>
+                We create simple and attractive
+                websites for different purposes.
+            </p>
+
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <h2>Web Development</h2>
+
+            <p>
+                We develop modern websites
+                using HTML, CSS and JavaScript.
+            </p>
+
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <h2>Mobile Apps</h2>
+
+            <p>
+                We build simple and useful
+                mobile applications.
+            </p>
+
+            <button>Learn More</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
